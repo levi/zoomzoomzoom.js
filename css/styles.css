@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+.frame {
+  width: 800px;
+  height: 600px;
+  margin: 45px auto 20px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.zoomable {
+  cursor: zoom-in;
+  position: relative;
+  -webkit-user-select: none;
+}
+
+.zoomable.reverse {
+  cursor: zoom-out;
+}
+
+  .zoomable .label {
+    position: fixed;
+    width: 60px;
+    top: 15px;
+    left: 50%;
+    margin-left: -30px;
+    display: block;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .zoomable > img {
+    display: block;
+    transform-origin: 0 0;
+  }
